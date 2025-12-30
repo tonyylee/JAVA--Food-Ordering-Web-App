@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Delicious food menu with easy online ordering and secure payment. Enjoy 20% off your first order!">
+  <title>Tony's Food Ordering App</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon" />
+</head>
+<body>
+  <div class="border">
+    <header>
+      <img src="images/headerimg.jpg" alt="header-image" class="header-img" />
+    </header>
+
+    <main>
+      <section class="menu-container" id="menu">
+        <!-- menu feed goes here -->
+      </section>
+
+      <section class="order-total-container" id="order-total">
+        <!-- order total feed goes here -->
+      </section>
+    </main>
+
+    <div id="modal" class="modal-container hidden" role="dialog" aria-modal="true" aria-labelledby="payment-form-title">
+      <form id="payment-form" novalidate>
+        <h2 id="payment-form-title">Enter card details</h2>
+
+        <input
+          required
+          name="name"
+          placeholder="Name on card"
+          type="text"
+          autocomplete="off"
+        />
+
+        <input
+          required
+          name="cardnumber"
+          placeholder="Card Number"
+          type="tel"
+          pattern="^\d{16}$"
+          maxlength="16"
+          autocomplete="off"
+          inputmode="numeric"
+        />
+        <span class="valid"></span>
+
+        <input
+          required
+          name="expirydate"
+          placeholder="Expiry Date MM/YY"
+          type="text"
+          maxlength="5"
+          autocomplete="off"
+          pattern="^(0[1-9]|1[0-2])\/\d{2}$"
+          title="Enter expiry date in MM/YY format"
+        />
+        <span class="valid"></span>
+
+        <input
+          required
+          name="cvv"
+          placeholder="CVV"
+          type="text"
+          pattern="[0-9]{3}"
+          autocomplete="off"
+          maxlength="3"
+        />
+        <span class="valid"></span>
+
+        <button type="submit">Pay</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="index.js" type="module"></script>
+</body>
+</html>

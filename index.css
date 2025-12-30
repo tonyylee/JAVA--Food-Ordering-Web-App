@@ -1,0 +1,260 @@
+/* ------------------
+   BASE
+------------------ */
+html,
+body {
+    margin: 0;
+    height: 1300px;
+    font-family: 'Smythe', sans-serif;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+/* ------------------
+   HEADER
+------------------ */
+header {
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-img {
+    display: block;
+    width: 600px;
+    height: 167px;
+    margin: 0 auto;
+}
+
+
+/* ------------------
+   MENU
+------------------ */
+#menu {
+    width: 500px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+}
+
+.menu-outer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 120px;
+    font-family: 'Smythe', sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid #D2D2D2;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.emoji {
+    font-size: 4.5rem;
+    height: 105px;
+}
+
+.name {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.ingredients {
+    font-size: 0.75rem;
+    color: #757575;
+    margin: 0;
+}
+
+h2,
+.price {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* ------------------
+   ORDER / CART
+------------------ */
+.order-total-container {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-container,
+.price-num {
+    display: flex;
+    align-items: center;
+}
+
+.price-num{
+    gap: 5px;
+    font-size: 1.5rem;
+    align-items: center;
+    font-weight: 100;
+}
+
+.total-price-container,
+.item-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.bot-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid #393333;
+}
+
+.item-name {
+    font-size: 1.5rem;
+}
+
+.discount-title {
+    padding-left: 80px;
+}
+
+.discount {
+    color: red;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.total-amount {
+    text-decoration: line-through;
+}
+
+.total-text{
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.remove-button {
+    background-color: inherit;
+    color: #8B8B8B;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    font-size: 0.6rem;
+}
+
+
+/* ------------------
+   BUTTONS
+------------------ */
+.cart-btns {
+    padding-bottom: 20px;
+}
+
+.cart {
+    width: 50px;
+    border-radius: 50%;
+    background-color: inherit;
+    color: #3C3C3C;
+    border: 1px solid #a77979;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button {
+    width: 400px;
+    height: 50px;
+    background-color: #16DB99;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* ------------------
+   PAYMENT MODAL
+------------------ */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#modal > form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  filter: drop-shadow(0 10px 10px #757575);
+  width: 450px;
+  height: 435px;
+  font-size: 1rem;
+}
+
+#payment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+input {
+    width: 400px;
+    height: 50px;
+    text-indent: 10px;
+    outline: none;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+
+/* ------------------
+   AFTER PAYMENT
+------------------ */
+.final-order {
+    color: #065F46;
+    background-color: #ECFDF5;
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

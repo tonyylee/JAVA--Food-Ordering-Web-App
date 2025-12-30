@@ -1,22 +1,19 @@
-# JAVA--Food-Ordering-Web-App
-A responsive, interactive food ordering web application featuring a menu with items, dynamic cart management, and a payment form with input validation. Designed to provide a smooth user experience and optimized for accessibility and performance, achieving a perfect Lighthouse score.
+# Getting Started
+Install the dependencies and run the project
+```
+npm install
+npm start
+```
 
-Features
+Head over to https://vitejs.dev/ to learn more about configuring vite
+## About Scrimba
 
-- Dynamic menu display with item details and emoji icons
+At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
+If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
+The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
 
-- Add/remove items to/from the cart with live quantity updates
+- [Our courses](https://scrimba.com/courses)
+- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
+- [Become a Scrimba Pro member](https://scrimba.com/pricing)
 
-- Real-time order total calculation with automatic 20% discount for new customers
-
-- Modal payment form with client-side validation for card details, expiry date, and CVV
-
-- Confirmation message on successful payment submission
-
-- Fully responsive design with consistent typography and clean UI
-
-- Optimized for performance, accessibility, and SEO (100% Lighthouse score)
-
-! Disclaimer !
-
-This project is created solely for educational purposes. It is a demonstration of frontend skills including JavaScript, DOM manipulation, form validation, and responsive design. It is not intended for production use and DOES NOT process real payments. Use responsibly.
+Happy Coding!
