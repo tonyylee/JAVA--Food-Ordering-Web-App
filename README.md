@@ -1,19 +1,41 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Tony's Food Ordering App
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+A simple and interactive food ordering web app built with JavaScript, HTML, and CSS. Users can add menu items to their cart, view their order with a 20% discount for new customers, and fill out a payment form with validation. The app features dynamic rendering and a responsive modal for payments.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## Live Demo
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+Check out the live app here: [tonysfoodorderingapp.netlify.app](https://tonysfoodorderingapp.netlify.app)
 
-Happy Coding!
+## Features
+
+- Dynamic menu with add/remove item functionality
+- Cart summary with real-time price calculation and discount application
+- Payment modal with form validation (card number, expiry date, CVV)
+- Responsive design and clean user interface
+- 100% Lighthouse score on performance, accessibility, best practices, and SEO
+
+## Technologies Used
+
+- JavaScript (ES6 modules)
+- HTML5
+- CSS3 (Flexbox)
+- Google Fonts (Smythe)
+
+## Disclaimer
+
+This project is created **solely for educational purposes**. It is a demonstration of frontend development skills and does **not process real payments**. Use responsibly. It is **not intended for production use**.
+
+## Getting Started
+
+1. Clone the repository
+2. Open `index.html` in your browser
+3. Explore the menu, add items to your cart, and complete the order through the payment form
+4. YOU DO NOT HAVE TO PUT IN YOUR ACTUAL INFO . ONLY FOR EDUCATIONAL PURPOSES, YOU CAN PUT IN ANYTHING
+
+## License
+
+MIT License
+
+---
+
+Feel free to customize or expand this README as needed.
